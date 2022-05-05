@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Winform", "Winform", "{BA950F4B-7501-412C-8E1B-0E43BDA1FAA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{7D46D3AC-BE22-4108-8BFD-D9677B460B28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncExample", "AsyncExample\AsyncExample.csproj", "{8EAC1E13-9020-4C3F-8159-45908AA62B15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{C129E418-E61A-403A-9D0C-42A67C0F8968}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestIdentity", "TestIdentity\TestIdentity.csproj", "{39E5D40E-160D-4DD0-BEAD-3FB97DBB4CCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMovie", "MvcMovie\MvcMovie.csproj", "{234FCE40-8723-49AF-94A8-1B8201D5DC65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EAC1E13-9020-4C3F-8159-45908AA62B15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EAC1E13-9020-4C3F-8159-45908AA62B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EAC1E13-9020-4C3F-8159-45908AA62B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EAC1E13-9020-4C3F-8159-45908AA62B15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39E5D40E-160D-4DD0-BEAD-3FB97DBB4CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39E5D40E-160D-4DD0-BEAD-3FB97DBB4CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39E5D40E-160D-4DD0-BEAD-3FB97DBB4CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39E5D40E-160D-4DD0-BEAD-3FB97DBB4CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{234FCE40-8723-49AF-94A8-1B8201D5DC65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{234FCE40-8723-49AF-94A8-1B8201D5DC65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{234FCE40-8723-49AF-94A8-1B8201D5DC65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{234FCE40-8723-49AF-94A8-1B8201D5DC65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8EAC1E13-9020-4C3F-8159-45908AA62B15} = {BA950F4B-7501-412C-8E1B-0E43BDA1FAA3}
+		{39E5D40E-160D-4DD0-BEAD-3FB97DBB4CCD} = {C129E418-E61A-403A-9D0C-42A67C0F8968}
+		{234FCE40-8723-49AF-94A8-1B8201D5DC65} = {C129E418-E61A-403A-9D0C-42A67C0F8968}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C5A33AB-C5E8-4EF5-83AF-B390E493155F}
+	EndGlobalSection
+EndGlobal

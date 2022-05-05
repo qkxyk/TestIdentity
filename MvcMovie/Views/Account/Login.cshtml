@@ -1,0 +1,144 @@
+﻿<!--<h2>Login</h2>
+
+<div class="row">
+    <div class="col-md-8">
+        <section>
+            <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-md-2 control-label">User</label>
+                    <div class="col-md-10">
+                        <input type="text" name="username" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Password</label>
+                    <div class="col-md-10">
+                        <input type="password" name="password" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" class="btn btn-default">Log in</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+-->
+<!--主体-->
+<section id="content">
+    <!--头部-->
+    <div class="content-header clearfix">
+        <a href="javaScript:;" class="current">我要登录</a>
+        <a href="javaScript:;">我要注册</a>
+    </div>
+    <!--内容-->
+    <div class="content-body">
+        <div class="dom" style="display: block">
+         <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal" role="form">
+                <div class="s1">
+                    <h4>账号</h4>
+                    <input type="text" name="UserName" placeholder="用户名/手机/邮箱">
+                </div>
+                <div class="s1">
+                    <h4>密码</h4>
+                    <input type="text" name="Password" placeholder="请输入密码">
+                </div>
+                <div class="s2">
+                    <input type="checkbox" name="Save">
+                    <span>&nbsp;记住密码</span>
+                </div>
+                <input type="submit" value="登&nbsp;录" class="btn">
+            </form>
+            <div class="dom-footer">
+                <div class="login-another">
+                    <a href="#">找回密码</a>
+                    <span>|</span>
+                    <span>还没有注册账号</span>
+                    <a href="#">立即注册</a>
+                </div>
+                <div class="login-three">
+                    <span>第三方账号直接登录</span>
+                    <div class="login-icon">
+                        <a href="#">
+                            <img src="images/qq2.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/wechat.png" alt="">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="dom">
+             <form asp-controller="Account" asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal" role="form">
+                <div class="s1">
+                    <h4>手机号码</h4>
+                    <input type="text" name="phone" placeholder="填写你的手机号码作为登录账号">
+                </div>
+                <div class="s1">
+                    <h4>用户名</h4>
+                    <input type="text" name="user" placeholder="中、英文均可，最长20个字符或10个汉字">
+                </div>
+                <div class="s1">
+                    <h4>密码</h4>
+                    <input type="password" name="password" placeholder="6-30位英文、数字、符号、区分大小写">
+                </div>
+                <div class="s1 msg-code">
+                    <h4>短信验证码</h4>
+                    <input type="text" name="msgcode" placeholder="填写短信验证码">
+                    <input type="button" name="bnt" value="获取短信验证码">
+                </div>
+                <div class="s1">
+                    <h4>邀请码(<span style="color:purple">选填</span>)</h4>
+                    <input type="text" name="code" placeholder="如果有邀请码，请填写">
+                </div>
+                <input type="submit" value="注&nbsp;册" class="btn">
+            </form>
+            <div class="dom-footer">
+
+                <div class="login-three">
+                    <span>第三方账号直接登录</span>
+                    <div class="login-icon">
+                        <a href="#">
+                            <img src="images/qq2.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/wechat.png" alt="">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+@section scripts{
+<script type="application/javascript">
+    window.onload=function () {
+        let as=document.getElementsByClassName('content-header')[0].getElementsByTagName('a');
+        let contents=document.getElementsByClassName("dom");
+        for (let i=0;i<as.length;i++){
+            let a=as[i];
+            a.id=i;
+            // 设置每个a标签的onclick事件
+            a.onclick=function () {
+                // 清楚所有标签的css设置，隐藏dom标签
+                for(let j=0;j<as.length;j++){
+                    as[j].className="";
+                    contents[j].style.display="none";
+                }
+                // 设置当前标签样式及当前标签下的所有dom标签可见
+                this.className='current';
+                // 当前div可见
+                contents[this.id].style.display='block';
+            }
+        }
+    }
+</script>
+    }

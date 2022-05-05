@@ -1,0 +1,10 @@
+/.vs/*
+/AsyncExample/bin/*
+/AsyncExample/obj/*
+/AsyncExample/wwwroot/lib/*
+/MvcMovie/bin/*
+/MvcMovie/obj/*
+/MvcMovie/wwwroot/lib/*
+/TestIdentity/bin
+/TestIdentity/obj
+/TestIdentity/wwwroot/lib/*

@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "MvcMovie": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "hotReloadEnabled": false,
+      "applicationUrl": "http://localhost:5260",
+      "dotnetRunMessages": true
+    }
+  }
+}
