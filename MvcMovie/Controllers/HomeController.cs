@@ -16,13 +16,14 @@ namespace MvcMovie.Controllers
         {
             _logger = logger;
         }
-        //[Authorize(AuthenticationSchemes =CookieAuthenticationDefaults.AuthenticationScheme)]
+        //[Authorize(AuthenticationSchemes = CookieAuthenticationDefaults.AuthenticationScheme)]
         [Authorize]
+        //[Authorize(Policy = "Claim.Count")]
         public IActionResult Index()
         {
             return View();
         }
-        [Authorize(AuthenticationSchemes = CookieAuthenticationDefaults.AuthenticationScheme)]
+        [Authorize]
         public IActionResult Privacy()
         {
             return View();

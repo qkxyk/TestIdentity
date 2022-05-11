@@ -77,18 +77,18 @@
         <div class="dom">
              <form asp-controller="Account" asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal" role="form">
                 <div class="s1">
-                    <h4>手机号码</h4>
-                    <input type="text" name="phone" placeholder="填写你的手机号码作为登录账号">
+                    <h4>邮件</h4>
+                    <input type="text" name="email" placeholder="填写你的手机号码作为登录账号">
                 </div>
                 <div class="s1">
                     <h4>用户名</h4>
-                    <input type="text" name="user" placeholder="中、英文均可，最长20个字符或10个汉字">
+                    <input type="text" name="Name" placeholder="中、英文均可，最长20个字符或10个汉字">
                 </div>
                 <div class="s1">
                     <h4>密码</h4>
                     <input type="password" name="password" placeholder="6-30位英文、数字、符号、区分大小写">
                 </div>
-                <div class="s1 msg-code">
+               @* <div class="s1 msg-code">
                     <h4>短信验证码</h4>
                     <input type="text" name="msgcode" placeholder="填写短信验证码">
                     <input type="button" name="bnt" value="获取短信验证码">
@@ -96,7 +96,7 @@
                 <div class="s1">
                     <h4>邀请码(<span style="color:purple">选填</span>)</h4>
                     <input type="text" name="code" placeholder="如果有邀请码，请填写">
-                </div>
+                </div>*@
                 <input type="submit" value="注&nbsp;册" class="btn">
             </form>
             <div class="dom-footer">
